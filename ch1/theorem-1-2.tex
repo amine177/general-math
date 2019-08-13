@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}
+\noindent Let $f \in F^E$ and $g \in G^F$\\
+- If $f$ and $g$ are injective, then $g \circ f$ is injective;\\
+Proof:\\
+Let $ (x, x') \in E^2$ | $ g \circ f(x) = g \circ f(x'1) $;\\
+$\Rightarrow f(x) = f(x')$ because $g$ is injective\\
+$\Rightarrow x = x' $ because $f$ is injective\\
+$\Rightarrow (\forall (x, x') \in E^2, g\circ
+f(x) = g \circ f(x')\Rightarrow  x = x')$\\\\
+
+\noindent - If $f$ and $g$ are surjective, then $g \circ f$ is surjective;\\
+Proof:\\
+Let $ y \in G $\\
+$\Rightarrow \exists \alpha \in F $ | $ g(\alpha) = y$\\
+$\Rightarrow \exists x \in E $ | $ f(x) = \alpha$ and $g(f(x)) = y$\\
+$\Rightarrow g \circ f $ is surjective;\\\\
+
+\noindent
+- If $g \circ f$ is injective, then $f$ is injective;\\
+Proof:\\
+Suppose $f$ is not injective\\
+$\Rightarrow \exists (x, x') \in E^2$ | $ f(x) = f(x') $
+and $ x \neq x' $\\
+$\Rightarrow \exists (x, x') \in E^2$ | $ g(f(x)) = f(x') $
+and $ x \neq x' $\\\\
+
+\noindent If $g \circ f$ is surjective, then $g$ is surjective\\
+Suppose $g$ is not surjective\\
+$\Rightarrow \exists y \in G$ , $\nexists \alpha \in F$ | $ g(\alpha) = y$\\
+$\Rightarrow $ (if $\exists x \in E $ | $ f(x) = \alpha \Rightarrow 
+\exists y \in G,\  \nexists x \in E $ | $ g(f(x)) = y)$ or
+(if $\nexists x \in E $ | $ f(x) = \alpha \Rightarrow
+\exists y \in G,\ \nexists x \in E $ | $ g(f(x)) = y)$
+
+\end{document}
