@@ -1,0 +1,27 @@
+\documentclass{article}
+\begin{document}
+\noindent Let $f: E \rightarrow F $ and a family
+of F, $(B_i)_{i \in I} $. Proove that\\
+\[
+f^{-1}(\bigcap_{i \in I}B_i) =
+\bigcap_{i \in I}f^{-1}(B_i)
+\]
+
+\noindent Let $x \in  f^{-1}(\bigcap_{i \in I}B_i)$\\
+$\Rightarrow \exists y \in  \bigcap_{i \in I}B_i \ |
+\ f(x) = y$\\
+$\Rightarrow \forall i \in I, x \in f^{-1}(B_i)$\\
+$\Rightarrow \forall i \in I, x \in 
+\bigcap_{i \in I}f^{-1}(B_i)$\\
+$\Rightarrow f^{-1}(\bigcap_{i \in I}B_i) \subset 
+\bigcap_{i \in I}f^{-1}(B_i)
+$\\
+
+\noindent Let $x \in \bigcap_{i \in I}f^{-1}(B_i)$\\
+$\Rightarrow \exists y, \forall i \in I, y \in B_i$
+and $ f(x) = y$\\
+$\Rightarrow y \in \bigcap_{i \in I}B_i$\\
+$\Rightarrow x \in f^{-1}(\bigcap_{i \in I}B_i)$\\
+$\Rightarrow f^{-1}(\bigcap_{i \in I}B_i) 
+\supset \bigcap_{i \in I}f^{-1}(B_i)$
+\end{document}
