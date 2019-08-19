@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\noindent Let $R$ be an equivalence relation on the set $E$.
+The family $(C_x)_{x\in E}$ of the associated equivalence classes
+create a partition of the set $E$.\\
+
+\noindent Proof:\\
+1- Proove that $\forall (i, j) \in I^2, C_i  \cap C_j \neq \O \Rightarrow
+C_i = C_j$
+
+\noindent Let $ x \in C_i , C_i \cap C_j \neq \O$ and $R$ an equivalence relation\\
+$\Rightarrow \exists y \in C_j \ | \ x R y$\\
+$\Rightarrow \forall z \in C_j, y R z \Rightarrow z R x$\\
+$\Rightarrow C_i = C_j$\\
+
+\noindent
+2- Proove that $\forall i \in I, C_i \neq \O $\\
+Let $x \in E$ and $C_i$ its equivalence class\\
+$\Rightarrow x \in C_i$
+$\Rightarrow \forall i \in I, C_i \neq \O$\\
+
+\noindent 3- Proove that $\bigcup_{i \in I}C_i = E $\\
+Let $x \in E$\\
+$\Rightarrow \exists i \in I \ | \ x \in C_i$\\
+$\Rightarrow E \subset C_i \subset \bigcup_{i \in I}C_i$\\
+Let $x \in \bigcup_{i \in I}C_i $\\
+$\Rightarrow x \in E$\\
+$\Rightarrow E \supset \bigcup_{i \in I}C_i$\\
+\end{document}
