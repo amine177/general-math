@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}
+\noindent Consider the divsibility in $\mathbb{N}$:\\
+\[
+\forall (n, m) \in \mathbb{N}^2, n \mid m \iff
+\exists k \in \mathbb{N} \ | \ m = kn
+\]
+
+\noindent 1. Verify that that relation defines a partial order
+over $\mathbb{N}$;\\
+2. Does  $\mathbb{N}$ admit an infimum, supremum for that
+order?\\
+3. What are the maximums and minimums of $\mathbb{N}
+\backslash \{0, 1\}$ ?\\
+
+\noindent 1. ($\forall x \in \mathbb{N}, x \mid x$);
+($\forall (x, y, z) \in \mathbb{N}^2, $ if $ x \mid y $ and
+$ z \mid x \Rightarrow z \mid y$); ($\forall (x, y, z)
+\in \mathbb{N}^2, x \mid y $ and $ y \mid x \iff x = y$); Then $\mid$ is an order relation over $\mathbb{N}$.\\
+Knowing $11 \mid 13 $ and $ 13 \mid 11$ is false
+$\Rightarrow \ \mid $ is partial over $\mathbb{N}$.\\
+
+\noindent 2. \ $\forall x \in \mathbb{N}, 1 \mid x
+\Rightarrow 1 $ is an infimum.\\
+\indent $\forall x \in \mathbb{N}, x \mid 0 \Rightarrow 0 $
+is a supremum.\\
+
+\noindent 3. There are no maximums and minimums in $\mathbb{N} \backslash \{0, 1\} $ by $ \mid $.
+\end{document}
