@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amssymb}
+\begin{document}
+\noindent Let $(a,b) \in \mathbb{N}^2, b \neq 0.$
+Then $\exists!(q,r) \in \mathbb{N}^2$ such as:\\
+1. $ a = bq + r$\\
+2. $ 0 \leq r < b$\\
+
+\noindent Proof(informal):\\
+$(a,b) \in \mathbb{N}^2$\\
+$\Rightarrow \exists k^{(1)} \in \mathbb{N} \ | \ ( a = b + k^{(1)} $\\
+$\Rightarrow ( \exists k^{(1)} \in \mathbb{N} \ | \ (k^{(1)} < b$ and $ a = b + k^{(1)})) $ or
+$(\exists k^{(2)} \in \mathbb{N} \ |
+ a = b + b + k^{(2)})$\\
+Continuing until $0 \leq k^{(q)} < b $, yields\\
+$\Rightarrow \exists (q,r) \in \mathbb{N}, r = k^{(q)}
+\mid a = qb + r$ and $ 0 \leq r < b$\\
+
+\noindent Let $((q,r),(q',r')) \in \mathbb{N}^4 \mid 
+a = bq + r $ and $a = bq' + r'$\\
+$\Rightarrow r - r' = b(q - q')$\\
+Having $ -b <r - r' < b$\\
+$\Rightarrow -1 < q-q' <1$\\
+$\Rightarrow q = q' $ and $ r = r'$\\
+
+\noindent Proof 2:\\
+Let $A = \{k \in \mathbb{N}: \exists x \in \mathbb{N}:
+k=xb \leq a\}$\\
+Having $0 \in A, (\forall k \in A, k \leq a)$ and $A \subset \mathbb{N}$\\
+$\Rightarrow \exists!q \in \mathbb{N} \mid max_A = qb$\\
+$\Rightarrow qb \leq a$\\
+$\Rightarrow \exists! r  \in \mathbb{N}, r \geq 0 \mid hb +r = a$\\
+Having $qb + b > a$\\
+$\Rightarrow hb + b > hb +r$\\
+$\Rightarrow b > r$
+\end{document}
