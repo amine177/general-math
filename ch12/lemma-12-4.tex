@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\noindent $[p, q] $ is $ \{ k \in \mathbb{N} \ | \ p\leq k\leq q  \} $\\
+
+\noindent Let  $(p, q) \in \mathbb{N^*}, then:$
+\begin{align}
+(p \leq q) &\iff (\exists f: [1, p] \mapsto [1, q] \mathrm{\ is\  injective)}\\
+(p \geq q) &\iff (\exists f: [1, p] \mapsto [1, q] \mathrm{\ is\  surjective)}
+\end{align}
+
+\noindent Proof:\\
+$\Rightarrow$\\
+Having $(p \leq q)$\\
+$\Rightarrow \forall k \in [1, p], \exists k \in [1, q]\  | \ Id(k) = k $\\
+
+\noindent $\Leftarrow$\\
+Suppose $\exists f: [1, p] \mapsto [1, q] \mathrm{\ is\  injective}$\\
+$\Rightarrow |[1, p]| \leq |[1, q]|$\\
+\\\\
+$\Rightarrow$\\
+\noindent Having $(p \geq q)$\\
+$\Rightarrow \forall k \in [1, q], \exists k \in [1, p]\  | \ Id(k) = k $\\
+\noindent $\Leftarrow$\\
+Suppose $\exists f: [1, p] \mapsto [1, q] \mathrm{\ is\  surjective}$\\
+$\Rightarrow |[1, p]| \geq |[1, q]|$\\
+\end{document}
